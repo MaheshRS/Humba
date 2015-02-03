@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOWNLOAD_LOCATION="https://github.com/MaheshRS/Kalapani/raw/master/Scripts/resymbolicate"
+DOWNLOAD_LOCATION="https://github.com/MaheshRS/Humba/master/Scripts/resymbolicate"
 USERNAME=$(whoami)
 INSTALL_DIR="/Users/$USERNAME/Humba/Scripts"
 
