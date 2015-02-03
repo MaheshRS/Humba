@@ -25,11 +25,11 @@ Once installation of the Humba is complete reopen terminal. 'resymbolicate' is t
 
 
 ```sh
-$ resymbolicate <*.crash file original crash file> <*.app.dSYM> <*.crash destination file>
+$ resymbolicate <*.crash original crash file path> <*.app.dSYM file path> <*.crash destination file path>
 ```
-* <*.crash file original crash file> is the crash file that needs to be symbolicated
-* <*.app.dSYM> is the corresponding debug symbol file for the build
-* <*.crash destination file> is the optional destination file. This is optional argument, If the argument is no present then the symbolicated crash will be printer on the terminal
+* <*.crash original crash file path> is the crash file that needs to be symbolicated
+* <*.app.dSYM file path> is the corresponding debug symbol file for the build
+* <*.crash destination file path> is the optional destination file. This is optional argument, If the argument is no present then the symbolicated crash will be printer on the terminal
 
 ### Development
 
