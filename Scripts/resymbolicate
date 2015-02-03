@@ -13,6 +13,7 @@ function startCrashSymbolication {
 		$symbolicateCrashPath "$crash_file_path" "$debug_symbols_path" > destination_file_path
 	else	
 		$symbolicateCrashPath "$crash_file_path" "$debug_symbols_path" >&2
+	fi
 	exit 0
 }
 
