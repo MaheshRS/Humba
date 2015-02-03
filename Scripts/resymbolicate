@@ -10,7 +10,7 @@ symbolicateCrashPath=$symbolicatecrash;
 function startCrashSymbolication {
 	echo "Symbolicating crash ..." >&2
 	if [ -n "$destination_file_path" ]; then
-		$symbolicateCrashPath "$crash_file_path" "$debug_symbols_path" > destination_file_path
+		$symbolicateCrashPath "$crash_file_path" "$debug_symbols_path" > $destination_file_path
 	else	
 		$symbolicateCrashPath "$crash_file_path" "$debug_symbols_path" >&2
 	fi
