@@ -37,4 +37,4 @@ Want to contribute? Great! Please send your pull requests and please file an iss
 
 License
 ----
-MIT
+GNU GENERAL PUBLIC LICENSE
