@@ -7,7 +7,7 @@ INSTALL_DIR="/Users/$USERNAME/Humba/Scripts"
 rm -rf $INSTALL_DIR
 mkdir -p $INSTALL_DIR
 	
-if grep -q "$INSTALL_DIR" ~/.bash_profile; then
+if grep -q -s "$INSTALL_DIR" ~/.bash_profile; then
 	# Path already available
 	echo "Installing ..." >&2
 else
