@@ -21,6 +21,8 @@ Install Humba by running the following curl command in terminal
 $ curl -fsSL https://raw.githubusercontent.com/MaheshRS/Humba/master/install.sh | sh
 ```
 
+### Usage
+
 Once installation of the Humba is complete reopen terminal. 'resymbolicate' is the command we need to use.
 
 
