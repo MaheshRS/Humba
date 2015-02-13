@@ -7,10 +7,17 @@ Humba is a basic bash shell script used to symbolicate iOS crashes. Symbolicatin
 
 In iOS when the app is compiling lldb compiler in parallel copies all the debug symbols along with the memory foot print to a debug symbol file with extension .dSYM . This symbol file is created every time the app is compiled and the generated symbol file is not the same as the previously generated file. This is the reason when we get a crash, the crash is not symbolicated on machines other than the one on which the build was generated. 
 
+With version 1.0.1, inforamation about the build, the UUID, build arch can be obtained using the -u option
+
 > Humba is a simple bash script that uses the XCode commandline tools and XCode symbolicatecrash.pl perl script. 
 
 ### Version
 1.0.0
+  - Symbolicate Crash logs using original DYSM
+
+1.0.1
+  - Display the UUID and arch information of the buid using the -u option
+
 
 ### Installation
 
@@ -32,6 +39,11 @@ $ resymbolicate <*.crash original crash file path> <*.app.dSYM file path> <*.cra
 * <*.crash original crash file path> is the crash file that needs to be symbolicated
 * <*.app.dSYM file path> is the corresponding debug symbol file for the build
 * <*.crash destination file path> is the optional destination file. This is optional argument, If the argument is no present then the symbolicated crash will be printer on the terminal
+
+```sh
+$ resymbolicate -u <*.app file path>
+```
+* <*.app file path> file path to the corresponding .app file.
 
 ### Development
 

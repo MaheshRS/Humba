@@ -49,8 +49,22 @@ function setupActiveDeveloperDirectory {
 	else
 		#developer directory not found. Search for the developer directory and export to $DEVELOPER_DIR environment variable.
 		prepareToResymbolicate # prepare variables to symbolicate
-fi
+	fi
 }
+
+#check if any options are available for eg
+while getopts ":u:" opt; do
+	case  $opt in
+		u )
+			# we have a valid option with an argument, display the version
+			dwarfdump -u $OPTARG
+			exit
+			;;
+		*)
+			echo "error: Invalid option -$OPTARG";
+			exit 1;
+	esac
+done
 
 if [ -z "$1" ]; then
 	echo "ERROR: Path to .crash file is missing" >&2
