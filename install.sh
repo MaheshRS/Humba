@@ -13,7 +13,7 @@ if grep -q -s "$INSTALL_DIR" ~/.bash_profile; then
 else
 	# Path not available. Add the installation directory path $PATH env variable 
 	echo "Installing ..." >&2
-	echo export PATH=$PATH:$INSTALL_DIR >> ~/.bash_profile
+	echo "alias resymbolicatecrash='/Users/$USERNAME/Humba/Scripts/resymbolicate'" >> ~/.bash_profile
 	source ~/.bash_profile
 fi
 
