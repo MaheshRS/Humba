@@ -28,7 +28,7 @@ You need XCode commandline tools installed:
 
 If you are updating Humba from 1.0.1 to higher version, we need to do a quick clean up
  * Open ~/.bash_profile (vi ~/.bash_profile)
- * Delete the line which contains '/<your username>/Humba/Scripts string'
+ * Delete the line which contains "/<your username>/Humba/Scripts" string
  * Save (Press esc and type ':wq') 
 
 Install Humba by running the following curl command in terminal
