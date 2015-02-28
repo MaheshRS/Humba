@@ -42,7 +42,7 @@ Once installation of the Humba is complete reopen terminal. 'resymbolicate' is t
 
 
 ```sh
-$ resymbolicate <*.crash original crash file path> <*.app.dSYM file path> <*.crash destination file path>
+$ resymbolicatecrash <*.crash original crash file path> <*.app.dSYM file path> <*.crash destination file path>
 ```
 * <*.crash original crash file path> is the crash file that needs to be symbolicated
 * <*.app.dSYM file path> is the corresponding debug symbol file for the build
@@ -52,7 +52,7 @@ $ resymbolicate <*.crash original crash file path> <*.app.dSYM file path> <*.cra
 To get the build information use the following command
 
 ```sh
-$ resymbolicate -u <*.app file path>
+$ resymbolicatecrash -u <*.app file path>
 ```
 * <*.app file path> file path to the corresponding .app file.
 
